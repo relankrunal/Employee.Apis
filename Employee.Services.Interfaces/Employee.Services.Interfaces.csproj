@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Employee\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Employee\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Employee.Models.Client\Employee.Models.Client.csproj" />
+  </ItemGroup>
 </Project>

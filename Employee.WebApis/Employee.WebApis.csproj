@@ -20,4 +20,7 @@
     <Folder Include="Api\Admins\" />
     <Folder Include="Api\Employee\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig" />
+  </ItemGroup>
 </Project>

@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Employee.Services.Interfaces\Employee.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Employee.Models.Client\Employee.Models.Client.csproj" />
+    <ProjectReference Include="..\Employee.Repositories.Interfaces\Employee.Repositories.Interfaces.csproj" />
+    <ProjectReference Include="..\Employee.Models.Data\Employee.Models.Data.csproj" />
+  </ItemGroup>
 </Project>

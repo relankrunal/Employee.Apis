@@ -6,4 +6,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Dtos\" />
+    <None Remove="Enumerations\" />
+    <None Remove="Messages\" />
+    <None Remove="Messages\Response\" />
+    <None Remove="Messages\Request\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dtos\" />
+    <Folder Include="Enumerations\" />
+    <Folder Include="Messages\" />
+    <Folder Include="Messages\Response\" />
+    <Folder Include="Messages\Request\" />
+  </ItemGroup>
 </Project>

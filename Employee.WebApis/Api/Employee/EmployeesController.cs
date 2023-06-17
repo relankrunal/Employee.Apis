@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Employee.WebApis.Api.Employee
 {
+    [Produces("application/json")]
+    [Route("api/[Controller]")]
+    [ApiController]
     public class EmployeesController : Controller
     {
         // GET: /<controller>/
