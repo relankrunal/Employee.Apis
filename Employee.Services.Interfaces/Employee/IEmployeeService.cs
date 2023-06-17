@@ -3,7 +3,7 @@ using Employee.Models.Client.Dtos;
 
 namespace Employee.Services.Interfaces.Employee
 {
-	public interface IEmployeeService
+	public interface IEmployeeService : ISimpleServiceBase
 	{
 		Task<EmployeeResponse> Create(CreateEmployee employee);
 	}
