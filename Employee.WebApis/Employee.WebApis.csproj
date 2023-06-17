@@ -10,4 +10,14 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Api\" />
+    <None Remove="Api\Admins\" />
+    <None Remove="Api\Employee\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Api\" />
+    <Folder Include="Api\Admins\" />
+    <Folder Include="Api\Employee\" />
+  </ItemGroup>
 </Project>

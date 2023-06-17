@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k/xdx2mJTL92q4s6fSsOwRAKITHnHhP0B3H0DqKO9+Mrr9WUVDSLPlWDJ2FeOb+SYMEa97eSAgrxtGy3GJm8Kg==",
+  "dgSpecHash": "n3vUAjQK0o+vRa3HgvO7HyivUyKMKaocxevgRXJS+Jfk8p5NlWNs6UX8enqw9gZRKy2+2rrETvHgLXWtRpcI3Q==",
   "success": true,
   "projectFilePath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Services.Interfaces/Employee.Services.Interfaces.csproj",
-  "expectedPackageFiles": [
-    "/Users/kunalrelan/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "/Users/kunalrelan/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
-    "/Users/kunalrelan/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "/Users/kunalrelan/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "/Users/kunalrelan/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "/Users/kunalrelan/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
