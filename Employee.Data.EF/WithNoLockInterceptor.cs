@@ -1,11 +1,10 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore.Diagnostics;
+
 namespace Employee.Data.EF
 {
-	public class WithNoLockInterceptor
-	{
-		public WithNoLockInterceptor()
-		{
-		}
-	}
+    public class WithNoLockInterceptor: DbCommandInterceptor
+    {
+    }
 }
 
