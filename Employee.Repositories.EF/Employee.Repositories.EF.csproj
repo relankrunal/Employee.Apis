@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Employee.Data.EF\Employee.Data.EF.csproj" />
+    <ProjectReference Include="..\Employee.Models.Data\Employee.Models.Data.csproj" />
+    <ProjectReference Include="..\Employee.Repositories.Interfaces\Employee.Repositories.Interfaces.csproj" />
+  </ItemGroup>
 </Project>

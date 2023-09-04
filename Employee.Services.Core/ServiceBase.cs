@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Employee.Models.Client.Messages.Response;
+﻿using Employee.Models.Data.Messages.Response;
 using Employee.Repositories.Interfaces;
-using Microsoft.Data.SqlClient;
-using System.Linq;
-using System.Data;
 
 namespace Employee.Services.Core
 {
@@ -17,56 +12,21 @@ namespace Employee.Services.Core
             _repository = repository;
         }
 
-        protected internal virtual async Task<PagingList<O>> ExecuteStoreProcedure<I, O>(string procName,
-            I input, string output = "") where O : class
+        protected internal virtual async Task<PagingList<O>> ExecuteStoreProcedure<I, O>(string procName, I input, string output = "") where O : class
         {
             var unitOfWork = _repository as IUnitOfwork;
+
             var repository = unitOfWork.GetRepository<O>();
-            var parameters = GetSqlParams(input, output);
-            var result = await repository.ExecuteStoreProcedure(procName, parameters);
-            
+
+            var result = await repository.ExecuteStoreProcedure(procName, input, output);
+            return result;
         }
 
-        protected internal virtual async Task<int?> ExecuteStoreProcedure<P>(string procName, P input,string output="")
+        protected internal virtual async Task<int?> ExecuteStoreProcedure<I>(string procName, I input, string output = "", bool forJob = false)
         {
             var unitOfWork = _repository as IUnitOfwork;
-            var parameters = GetSqlParams(input, output);
-
-            var stringOfParams =
-                string.Join(
-                    separator: ',',
-                    value: (string?[])parameters
-                           .Where(a => a.Direction != System.Data.ParameterDirection.Output)
-                           .Select(q => q.ParameterName));
-
-            if (!string.IsNullOrEmpty(output))
-            {
-                stringOfParams += ", @" + output;
-            }
-
-            return await unitOfWork.ExecuteStoreProcedure(procName + " " + stringOfParams, parameters);
-        }
-
-        private SqlParameter[] GetSqlParams<K>(K input, string output = "")
-        {
-            List<SqlParameter> parameters = new List<SqlParameter>();
-
-            if (input != null)
-            {
-                var properties = input.GetType().GetProperties();
-                for (int i = 0; i < properties.Length; i++)
-                {
-                    var property = properties[i];
-                    parameters.Add(new SqlParameter($"@{output}", SqlDbType.Int));
-                }
-                if (!string.IsNullOrEmpty(output))
-                {
-                    var outputParam = new SqlParameter($"@{output}", SqlDbType.Int);
-                    outputParam.Direction = ParameterDirection.Output;
-                    parameters.Add(outputParam);
-                }
-            }
-            return parameters.ToArray();
+            var result = await unitOfWork.ExecuteStoreProcedure(procName, input, output, forJob);
+            return result;
         }
     }
 }

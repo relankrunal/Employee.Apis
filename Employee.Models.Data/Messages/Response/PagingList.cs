@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Employee.Models.Data.Response
+namespace Employee.Models.Data.Messages.Response
 {
     public class PagingList<T> : List<T>
     {

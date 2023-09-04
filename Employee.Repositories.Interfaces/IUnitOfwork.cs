@@ -9,7 +9,7 @@ namespace Employee.Repositories.Interfaces
 
 		IGenericRepository<T> GetRepository<T>() where T : class;
 
-		Task<int?> ExecuteStoreProcedure(string query, SqlParameter[] parameters);
+		Task<int?> ExecuteStoreProcedure<I>(string query, I input, string outPut= "", bool forJob = false);
 	}
 }
 
