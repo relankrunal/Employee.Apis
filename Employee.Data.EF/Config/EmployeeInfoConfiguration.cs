@@ -70,7 +70,7 @@ namespace Employee.Data.EF.Config
             // Configure the one-to-many relationship with Task
             entity.HasMany(e => e.Tasks)
                 .WithOne(t => t.Employee)
-                .HasForeignKey(t => t.Employee);
+                .HasForeignKey(t => t.AssignedTo);
 
             // Configure the many-to-many relationship with Project using EmployeeProject junction table
             entity.HasMany(e => e.EmployeeProjects)
