@@ -54,6 +54,7 @@ namespace Employee.Data.EF
             }
             return query;
         }
+
         private static IOrderedQueryable<T> ApplyOrder<T>(IQueryable<T> source, string property, string methodName)
         {
             string[] props = property.Split('.');

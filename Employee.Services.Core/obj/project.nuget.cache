@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "FpVtL7Wf0b3Oo4mfOK9QcpFYxfelCd3BZ5ZnpYC40+ZjDWC3LTcBkJ0k7ZRLya/6pz6AZwH56k5iGGi0Cl9D/Q==",
+  "dgSpecHash": "3op7qJ+wOSe/+hMcKgT0Evnp/QO2FopFwAJpWNK16CRPKmgeVinwrBY7m1MLm9ovR7K49X+Htr4rTnitQ0XAug==",
   "success": true,
   "projectFilePath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Services.Core/Employee.Services.Core.csproj",
   "expectedPackageFiles": [
+    "/Users/kunalrelan/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "/Users/kunalrelan/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/kunalrelan/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/microsoft.data.sqlclient/5.1.1/microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.1.0/microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/microsoft.identity.client/4.47.2/microsoft.identity.client.4.47.2.nupkg.sha512",

@@ -12,4 +12,7 @@
     <ProjectReference Include="..\Employee.Repositories.Interfaces\Employee.Repositories.Interfaces.csproj" />
     <ProjectReference Include="..\Employee.Models.Data\Employee.Models.Data.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
 </Project>
