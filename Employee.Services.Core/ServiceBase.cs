@@ -12,21 +12,31 @@ namespace Employee.Services.Core
             _repository = repository;
         }
 
-        protected internal virtual async Task<PagingList<O>> ExecuteStoreProcedure<I, O>(string procName, I input, string output = "") where O : class
+        protected internal virtual async Task<PagingList<O>?> ExecuteStoreProcedure<I, O>(string procName, I input, string output = "") where O : class
         {
             var unitOfWork = _repository as IUnitOfwork;
 
-            var repository = unitOfWork.GetRepository<O>();
+            var repository = unitOfWork?.GetRepository<O>();
 
-            var result = await repository.ExecuteStoreProcedure(procName, input, output);
-            return result;
+            if (repository != null)
+            {
+                var result = await repository.ExecuteStoreProcedure(procName, input, output);
+                return result;
+            }
+            return default;
         }
 
         protected internal virtual async Task<int?> ExecuteStoreProcedure<I>(string procName, I input, string output = "", bool forJob = false)
         {
             var unitOfWork = _repository as IUnitOfwork;
-            var result = await unitOfWork.ExecuteStoreProcedure(procName, input, output, forJob);
-            return result;
+
+            if (unitOfWork != null)
+            {
+                var result = await unitOfWork.ExecuteStoreProcedure(procName, input, output, forJob);
+                return result;
+            }
+
+            return default;
         }
     }
 }

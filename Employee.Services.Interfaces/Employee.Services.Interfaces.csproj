@@ -7,10 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Employee\" />
+    <None Remove="Employees\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Employee\" />
+    <Folder Include="Employees\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Employee.Models.Client\Employee.Models.Client.csproj" />
