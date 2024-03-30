@@ -48,9 +48,9 @@ namespace Employee.Data.EF.Config
                   .HasForeignKey<EmployeeProfile>(ep => ep.EmployeeId);
 
             // Configure one-to-many relationship between Department and Employee
-            entity.HasOne(er => er.Department)
-            .WithMany(e => e.Employees)
-            .HasForeignKey(er => er.EmployeeId);
+            //entity.HasOne(er => er.Department)
+            //.WithMany(e => e.Employees)
+            //.HasForeignKey(er => er.EmployeeId);
 
             // Configure the many-to-many relationship with Role using EmployeeRole junction table
             entity.HasMany(e => e.EmployeeRoles)
