@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "MAho6c6xCvEZwu3k5hOYCC+vvKWasA8tNy62ABk1u9uq5eXhiM0rAugCuhcfuLYDjexYYjRyWeFsBJsR+a/u5Q==",
+  "dgSpecHash": "gde4UUdpw5mQ24f0CyiBSFLIU0RunvXG6m0yV3oE6B203hUdERcXikdfDDl+3SRXPwGei16t2Q0McmNuvcIJ3w==",
   "success": true,
   "projectFilePath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Services.Core/Employee.Services.Core.csproj",
   "expectedPackageFiles": [
-    "/Users/kunalrelan/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/Users/kunalrelan/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/Users/kunalrelan/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/11.0.0/automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
@@ -24,7 +25,7 @@
     "/Users/kunalrelan/.nuget/packages/microsoft.aspnetcore.routing.abstractions/2.2.0/microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/microsoft.aspnetcore.webutilities/2.2.0/microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "/Users/kunalrelan/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/kunalrelan/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/microsoft.data.sqlclient/5.1.1/microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.1.0/microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/microsoft.dotnet.platformabstractions/2.1.0/microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512",

@@ -55,7 +55,7 @@ namespace Employee.Data.EF
             return query;
         }
 
-        private static IOrderedQueryable<T> ApplyOrder<T>(IQueryable<T> source, string property, string methodName)
+        private static IOrderedQueryable<T>? ApplyOrder<T>(IQueryable<T> source, string property, string methodName)
         {
             string[] props = property.Split('.');
             Type type = typeof(T);
@@ -65,24 +65,27 @@ namespace Employee.Data.EF
 
             foreach (var item in props)
             {
-                PropertyInfo propertyInfo = type.GetProperty(item, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
-                expression = Expression.Property(expression, propertyInfo);
-                type = propertyInfo.PropertyType;
+                PropertyInfo? propertyInfo = type?.GetProperty(item, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                if (propertyInfo != null)
+                {
+                    expression = Expression.Property(expression, propertyInfo);
+                    type = propertyInfo.PropertyType;
+                }
             }
 
             Type delegateType = typeof(Func<,>).MakeGenericType(typeof(T), type);
 
             LambdaExpression lambda = Expression.Lambda(delegateType, expression, parameter);
 
-            object result = typeof(Queryable).GetMethods().Single(
+            var result = typeof(Queryable).GetMethods().Single(
                 m => m.Name == methodName
                      && m.IsGenericMethodDefinition
                      && m.GetGenericArguments().Length == 2
                      && m.GetParameters().Length == 2)
-                .MakeGenericMethod(typeof(T),type)
-                .Invoke(null, new object[] { source, lambda});
+                .MakeGenericMethod(typeof(T), type)
+                .Invoke(null, new object[] { source, lambda });
 
-            return (IOrderedQueryable<T>)result;
+            return result as IOrderedQueryable<T>;
         }
     }
 }

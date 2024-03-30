@@ -12,6 +12,7 @@
     "Employee.WebApis": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "swagger",
       "applicationUrl": "http://localhost:9125",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

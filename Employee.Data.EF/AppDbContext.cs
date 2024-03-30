@@ -16,15 +16,15 @@ namespace Employee.Data.EF
 
         // DbSet properties for your entity types
         
-        public DbSet<EmployeeProfile> EmployeeProfiles { get; set; }
-        public DbSet<Department> Departments { get; set; }
-        public DbSet<Role> Roles { get; set; }
-        public DbSet<EmployeeRole> EmployeeRoles { get; set; }
-        public DbSet<LeaveRequest> LeaveRequests { get; set; }
-        public DbSet<Salary> Salaries { get; set; }
-        public DbSet<Models.Data.Entity.Task> Tasks { get; set; }
-        public DbSet<Project> Projects { get; set; }
-        public DbSet<EmployeeProject> EmployeeProjects { get; set; }
+        //public DbSet<EmployeeProfile> EmployeeProfiles { get; set; }
+        //public DbSet<Department> Departments { get; set; }
+        //public DbSet<Role> Roles { get; set; }
+        //public DbSet<EmployeeRole> EmployeeRoles { get; set; }
+        //public DbSet<LeaveRequest> LeaveRequests { get; set; }
+        //public DbSet<Salary> Salaries { get; set; }
+        //public DbSet<Models.Data.Entity.Task> Tasks { get; set; }
+        //public DbSet<Project> Projects { get; set; }
+        //public DbSet<EmployeeProject> EmployeeProjects { get; set; }
 
         #endregion
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -33,14 +33,14 @@ namespace Employee.Data.EF
 
             //modelBuilder.ApplyConfiguration(new EmployeeConfiguration());
 
-            modelBuilder.ApplyConfiguration(new EmployeeInfoConfiguration());
-            modelBuilder.ApplyConfiguration(new EmployeeProfileConfiguration());
-            modelBuilder.ApplyConfiguration(new DepartmentConfiguration());
-            modelBuilder.ApplyConfiguration(new EmployeeRoleConfiguration());
-            modelBuilder.ApplyConfiguration(new EmployeeProjectConfiguration());
-            modelBuilder.ApplyConfiguration(new LeaveRequestConfiguration());
-            modelBuilder.ApplyConfiguration(new TaskConfiguration());
-            modelBuilder.ApplyConfiguration(new SalaryConfiguration());
+            //modelBuilder.ApplyConfiguration(new EmployeeInfoConfiguration());
+            //modelBuilder.ApplyConfiguration(new EmployeeProfileConfiguration());
+            //modelBuilder.ApplyConfiguration(new DepartmentConfiguration());
+            //modelBuilder.ApplyConfiguration(new EmployeeRoleConfiguration());
+            //modelBuilder.ApplyConfiguration(new EmployeeProjectConfiguration());
+            //modelBuilder.ApplyConfiguration(new LeaveRequestConfiguration());
+            //modelBuilder.ApplyConfiguration(new TaskConfiguration());
+            //modelBuilder.ApplyConfiguration(new SalaryConfiguration());
         }
 
         [ExcludeFromCodeCoverage]

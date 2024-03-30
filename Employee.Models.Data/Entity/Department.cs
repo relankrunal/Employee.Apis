@@ -11,7 +11,7 @@ namespace Employee.Models.Data.Entity
         public string DepartmentName { get; set; }
 
         // Navigation property for employees
-        public List<EmployeeInfo> Employees { get; set; }
+        public List<Employees> Employees { get; set; }
     }
 }
 

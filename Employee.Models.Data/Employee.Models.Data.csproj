@@ -16,4 +16,15 @@
     <Folder Include="Entity\" />
     <Folder Include="Messages\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Entity\EmployeeInfo.cs" />
+    <Compile Remove="Entity\EmployeeProject.cs" />
+    <Compile Remove="Entity\Role.cs" />
+    <Compile Remove="Entity\Task.cs" />
+    <Compile Remove="Entity\EmployeeRole.cs" />
+    <Compile Remove="Entity\Project.cs" />
+    <Compile Remove="Entity\EmployeeProfile.cs" />
+    <Compile Remove="Entity\LeaveRequest.cs" />
+    <Compile Remove="Entity\Salary.cs" />
+  </ItemGroup>
 </Project>

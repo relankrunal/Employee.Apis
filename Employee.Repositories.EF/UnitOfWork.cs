@@ -22,7 +22,7 @@ namespace Employee.Repositories.EF
 
             if (!string.IsNullOrEmpty(output))
             {
-                stringOfParameters += ", @" + output;
+                stringOfParameters += ", @" + output + " = @" + output + " output";
             }
 
             if (forJob)

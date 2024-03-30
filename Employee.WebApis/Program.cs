@@ -1,35 +1,55 @@
 ﻿
+using Employee.Data.EF;
 using Employee.Repositories.EF;
 using Employee.Repositories.Interfaces;
+using Employee.Services.Core;
 using Employee.Services.Core.Services;
 using Employee.Services.Interfaces.Employees;
+using Microsoft.EntityFrameworkCore;
 
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-builder.Services.AddSingleton<IUnitOfwork, UnitOfWork>();
-builder.Services.AddTransient<IEmployeeService, EmployeeService>();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+internal class Program
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    private static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
+
+        //DB Context
+        builder.Configuration.AddJsonFile("appsettings.Development.json");
+        //var connectionString = builder.Configuration.GetConnectionString("");
+        builder.Services.AddDbContext<AppDbContext>(options =>
+        {
+            _ = options.UseNpgsql(connectionString: builder.Configuration.GetConnectionString("Employees"));
+            options.AddInterceptors(new WithNoLockInterceptor());
+        }, ServiceLifetime.Scoped);
+
+        // Add services to the container.
+
+        builder.Services.AddControllers();
+        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+        builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddSwaggerGen();
+
+        builder.Services.AddTransient<IUnitOfwork, UnitOfWork>();
+
+        builder.Services.AddTransient<IEmployeeService, EmployeeService>();
+
+        builder.Services.AddAutoMapper(typeof(AutoMapperMappingProfile));
+
+        var app = builder.Build();
+
+        // Configure the HTTP request pipeline.
+        if (app.Environment.IsDevelopment())
+        {
+            app.UseSwagger();
+            app.UseSwaggerUI();
+        }
+
+        app.UseHttpsRedirection();
+
+        app.UseAuthorization();
+
+        app.MapControllers();
+
+        app.Run();
+    }
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();
-

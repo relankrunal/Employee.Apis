@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KhPVQzAJF+RPYfJasVx6J2CNZMP6uMhZpcERUL7PRFZMRSPVlzNxqJ29yurwkDod1fhJc42Bz69ZyPlrMK6fog==",
+  "dgSpecHash": "ZFYVrqNAIUyftcVU91eTN6qHva24l1vzB0QKV8Zizx/oNKyTlYXu9z3lMA5k4khFU3flUqky89gsdVSHMt2Kiw==",
   "success": true,
   "projectFilePath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.EF/Employee.Repositories.EF.csproj",
   "expectedPackageFiles": [
@@ -36,6 +36,8 @@
     "/Users/kunalrelan/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "/Users/kunalrelan/.nuget/packages/npgsql/6.0.10/npgsql.6.0.10.nupkg.sha512",
+    "/Users/kunalrelan/.nuget/packages/npgsql.entityframeworkcore.postgresql/6.0.22/npgsql.entityframeworkcore.postgresql.6.0.22.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/system.configuration.configurationmanager/6.0.1/system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/system.drawing.common/6.0.0/system.drawing.common.6.0.0.nupkg.sha512",

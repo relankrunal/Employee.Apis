@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "G38ei3KQrV+tgd1z+NH8/aGi4TGsK1PZ5/kaMwCvb+xxrngZDGbCBchUBoo3lDTWVGbkfG+bRHj1jleIVJEeDA==",
+  "dgSpecHash": "4kXE/PbtUogTgLz3OkuhLLgwXGXUXJf7k9/QO97lWLNm9LsQIh1ohV3C9q06/SVbD3ActLevbfEAFcWSHUnlLA==",
   "success": true,
   "projectFilePath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Data.EF/Employee.Data.EF.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,8 @@
     "/Users/kunalrelan/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/microsoft.win32.systemevents/5.0.0/microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "/Users/kunalrelan/.nuget/packages/npgsql/6.0.10/npgsql.6.0.10.nupkg.sha512",
+    "/Users/kunalrelan/.nuget/packages/npgsql.entityframeworkcore.postgresql/6.0.22/npgsql.entityframeworkcore.postgresql.6.0.22.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/system.configuration.configurationmanager/5.0.0/system.configuration.configurationmanager.5.0.0.nupkg.sha512",
     "/Users/kunalrelan/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",

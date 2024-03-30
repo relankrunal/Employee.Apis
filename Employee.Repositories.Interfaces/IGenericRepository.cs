@@ -8,10 +8,10 @@ namespace Employee.Repositories.Interfaces
 {
     public interface IGenericRepository<T> where T : class
     {
-        Task<IEnumerable<T>> Get(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null);
+        Task<IEnumerable<T>> Get(Expression<Func<T, bool>>? filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null);
 
         Task<PagingList<T>> Search(
-            Expression<Func<T, bool>> flter = null,
+            Expression<Func<T, bool>>? flter = null,
             int? pageSize = null,
             int pageNumber = 1,
             SortDirection sortDirection = SortDirection.Ascending,
@@ -25,7 +25,7 @@ namespace Employee.Repositories.Interfaces
 
         Task<T> Update(T entity);
 
-        IQueryable<T> GetQyery(Expression<Func<T, bool>> filter = null, bool IsInclude = false);
+        IQueryable<T> GetQyery(Expression<Func<T, bool>>? filter = null, bool IsInclude = false);
 
         Task<List<T>> InsertRage(List<T> entitiesToInsert);
 
