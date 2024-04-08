@@ -13,32 +13,39 @@ namespace Employee.Data.EF
     {
         private const string Ascending = "ASC";
 
-        public static IOrderedQueryable<T> OrderBy<T>(this IQueryable<T> source, string property, string direction)
+        public static IOrderedQueryable<T>? OrderBy<T>(this IQueryable<T> source, string property, string direction)
         {
             return direction == Ascending ? source.OrderBy(property) : source.OrderByDescending(property);
         }
 
-        public static IOrderedQueryable<T> OrderBy<T>(this IQueryable<T> source, string property)
+        public static IOrderedQueryable<T>? OrderBy<T>(this IQueryable<T> source, string property)
         {
-            return ApplyOrder(source, property, "OrderBy");
+            var toReturn =  ApplyOrder(source, property, "OrderBy");
+
+            if (toReturn != null)
+            {
+                return toReturn;
+            }
+            else
+                return default;
         }
 
-        public static IOrderedQueryable<T> OrderByDescending<T>(this IQueryable<T> source, string property)
+        public static IOrderedQueryable<T>? OrderByDescending<T>(this IQueryable<T> source, string property)
         {
             return ApplyOrder(source, property, "OrderByDescending");
         }
 
-        public static IOrderedQueryable<T> ThenBy<T>(this IOrderedQueryable<T> source, string property, string direction)
+        public static IOrderedQueryable<T>? ThenBy<T>(this IOrderedQueryable<T> source, string property, string direction)
         {
             return direction == Ascending ? source.ThenBy(property) : source.ThenByDescending(property);
         }
 
-        public static IOrderedQueryable<T> ThenBy<T>(this IOrderedQueryable<T> source, string property)
+        public static IOrderedQueryable<T>? ThenBy<T>(this IOrderedQueryable<T> source, string property)
         {
             return ApplyOrder(source, property, "ThenBy");
         }
 
-        public static IOrderedQueryable<T> ThenByDescending<T>(this IOrderedQueryable<T> source, string property)
+        public static IOrderedQueryable<T>? ThenByDescending<T>(this IOrderedQueryable<T> source, string property)
         {
             return ApplyOrder(source, property, "ThenByDescending");
         }

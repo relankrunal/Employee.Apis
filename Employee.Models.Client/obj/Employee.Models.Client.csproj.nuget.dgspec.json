@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Client/Employee.Models.Client.csproj": {}
+    "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Models.Client/Employee.Models.Client.csproj": {}
   },
   "projects": {
-    "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Client/Employee.Models.Client.csproj": {
+    "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Models.Client/Employee.Models.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Client/Employee.Models.Client.csproj",
+        "projectUniqueName": "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Models.Client/Employee.Models.Client.csproj",
         "projectName": "Employee.Models.Client",
-        "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Client/Employee.Models.Client.csproj",
+        "projectPath": "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Models.Client/Employee.Models.Client.csproj",
         "packagesPath": "/Users/kunalrelan/.nuget/packages/",
-        "outputPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Client/obj/",
+        "outputPath": "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Models.Client/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kunalrelan/.nuget/NuGet/NuGet.Config"

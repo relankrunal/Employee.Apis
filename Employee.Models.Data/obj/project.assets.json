@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj",
+      "projectUniqueName": "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj",
       "projectName": "Employee.Models.Data",
-      "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj",
+      "projectPath": "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj",
       "packagesPath": "/Users/kunalrelan/.nuget/packages/",
-      "outputPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/obj/",
+      "outputPath": "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Models.Data/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/kunalrelan/.nuget/NuGet/NuGet.Config"

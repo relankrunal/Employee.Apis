@@ -3308,7 +3308,6 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Employee.Models.Data >= 1.0.0",
-      "Microsoft.EntityFrameworkCore >= 7.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.10",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.22"
     ]
@@ -3319,11 +3318,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Data.EF/Employee.Data.EF.csproj",
+      "projectUniqueName": "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Data.EF/Employee.Data.EF.csproj",
       "projectName": "Employee.Data.EF",
-      "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Data.EF/Employee.Data.EF.csproj",
+      "projectPath": "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Data.EF/Employee.Data.EF.csproj",
       "packagesPath": "/Users/kunalrelan/.nuget/packages/",
-      "outputPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Data.EF/obj/",
+      "outputPath": "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Data.EF/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/kunalrelan/.nuget/NuGet/NuGet.Config"
@@ -3339,8 +3338,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj": {
-              "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj"
+            "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj": {
+              "projectPath": "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj"
             }
           }
         }
@@ -3355,10 +3354,6 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[7.0.10, )"
-          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.10, )"

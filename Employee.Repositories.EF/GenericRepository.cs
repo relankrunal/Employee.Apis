@@ -57,7 +57,7 @@ namespace Employee.Repositories.EF
             return toRetun;
         }
 
-        public virtual Task<IEnumerable<T>> Get(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null)
+        public virtual Task<IEnumerable<T>> Get(Expression<Func<T, bool>>? filter = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null)
         {
             IQueryable<T> query = dbSet;
 
@@ -77,7 +77,7 @@ namespace Employee.Repositories.EF
             return Task.FromResult(item);
         }
 
-        public IQueryable<T> GetQyery(Expression<Func<T, bool>> filter = null, bool IsInclude = false)
+        public IQueryable<T> GetQyery(Expression<Func<T, bool>>? filter = null, bool IsInclude = false)
         {
             IQueryable<T> query = dbSet;
 
