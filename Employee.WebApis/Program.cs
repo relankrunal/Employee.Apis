@@ -20,7 +20,7 @@ internal class Program
         //var connectionString = builder.Configuration.GetConnectionString("");
         builder.Services.AddDbContext<AppDbContext>(options =>
         {
-            _ = options.UseNpgsql(connectionString: builder.Configuration.GetConnectionString("Employees"));
+            _ = options.UseNpgsql(connectionString: builder.Configuration.GetConnectionString("SqlServer"));
             options.AddInterceptors(new WithNoLockInterceptor());
         }, ServiceLifetime.Scoped);
 
