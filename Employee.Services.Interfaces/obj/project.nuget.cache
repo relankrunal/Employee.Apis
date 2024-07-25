@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7yT7iBcumCOFs2+obudVDb+myiegtRHHtYyOhB7ZQA17+hZoHm1XVz27oe9XXS2E5C3FSEfk7LbLP5ajNxkq9g==",
+  "dgSpecHash": "SReRwGe2JPlw4sKerGrmOeTWaFEtUV03sEwnhDyM5diZ503auZxcltqdpYQFLSvyE1BbLvkveaavGxK4/Os3JA==",
   "success": true,
-  "projectFilePath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Services.Interfaces/Employee.Services.Interfaces.csproj",
+  "projectFilePath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Services.Interfaces/Employee.Services.Interfaces.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

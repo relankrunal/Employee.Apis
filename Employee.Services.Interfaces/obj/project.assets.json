@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Services.Interfaces/Employee.Services.Interfaces.csproj",
+      "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/Employee.Services.Interfaces/Employee.Services.Interfaces.csproj",
       "projectName": "Employee.Services.Interfaces",
-      "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Services.Interfaces/Employee.Services.Interfaces.csproj",
+      "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Services.Interfaces/Employee.Services.Interfaces.csproj",
       "packagesPath": "/Users/kunalrelan/.nuget/packages/",
-      "outputPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Services.Interfaces/obj/",
+      "outputPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Services.Interfaces/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/kunalrelan/.nuget/NuGet/NuGet.Config"
@@ -52,8 +52,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Client/Employee.Models.Client.csproj": {
-              "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Client/Employee.Models.Client.csproj"
+            "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Client/Employee.Models.Client.csproj": {
+              "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Client/Employee.Models.Client.csproj"
             }
           }
         }

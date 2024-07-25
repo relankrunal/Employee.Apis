@@ -12,6 +12,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Employee.Data.EF\Employee.Data.EF.csproj" />
     <ProjectReference Include="..\Employee.Models.Data\Employee.Models.Data.csproj" />
+    <ProjectReference Include="..\Employee.Infrastructure.Interface\Employee.Infrastructure.Interface.csproj" />
     <ProjectReference Include="..\Employee.Repositories.Interfaces\Employee.Repositories.Interfaces.csproj" />
+    <ProjectReference Include="..\Employee.Infrastructure\Employee.Infrastructure.csproj" />
   </ItemGroup>
 </Project>

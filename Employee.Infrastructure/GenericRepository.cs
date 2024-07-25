@@ -1,3 +1,12 @@
+using System.Data;
+using System.Linq.Expressions;
+using Employee.Infrastructure.Interface;
+using Employee.Models.Data.Enumerations;
+using Employee.Models.Data.Messages.Response;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
+
 namespace Employee.Infrastructure
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class

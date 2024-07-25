@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Data;
 
-namespace Employee.Repositories.EF
-{
+namespace Employee.Infrastructure
+{ 
     public class Parameters
     {
         public static SqlParameter[] Transform<T>(T input, string output)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.EF/Employee.Repositories.EF.csproj": {}
+    "/Users/kunalrelan/Desktop/Projects/API/Employee.Repositories.EF/Employee.Repositories.EF.csproj": {}
   },
   "projects": {
-    "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Data.EF/Employee.Data.EF.csproj": {
+    "/Users/kunalrelan/Desktop/Projects/API/Employee.Data.EF/Employee.Data.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Data.EF/Employee.Data.EF.csproj",
+        "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/Employee.Data.EF/Employee.Data.EF.csproj",
         "projectName": "Employee.Data.EF",
-        "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Data.EF/Employee.Data.EF.csproj",
+        "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Data.EF/Employee.Data.EF.csproj",
         "packagesPath": "/Users/kunalrelan/.nuget/packages/",
-        "outputPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Data.EF/obj/",
+        "outputPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Data.EF/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kunalrelan/.nuget/NuGet/NuGet.Config"
@@ -27,8 +27,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj": {
-                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj"
+              "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Data/Employee.Models.Data.csproj": {
+                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Data/Employee.Models.Data.csproj"
               }
             }
           }
@@ -76,14 +76,148 @@
         }
       }
     },
-    "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj": {
+    "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure.Interface/Employee.Infrastructure.Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj",
-        "projectName": "Employee.Models.Data",
-        "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj",
+        "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure.Interface/Employee.Infrastructure.Interface.csproj",
+        "projectName": "Employee.Infrastructure.Interface",
+        "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure.Interface/Employee.Infrastructure.Interface.csproj",
         "packagesPath": "/Users/kunalrelan/.nuget/packages/",
-        "outputPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/obj/",
+        "outputPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure.Interface/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kunalrelan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Client/Employee.Models.Client.csproj": {
+                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Client/Employee.Models.Client.csproj"
+              },
+              "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Data/Employee.Models.Data.csproj": {
+                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Data/Employee.Models.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.32, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure/Employee.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure/Employee.Infrastructure.csproj",
+        "projectName": "Employee.Infrastructure",
+        "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure/Employee.Infrastructure.csproj",
+        "packagesPath": "/Users/kunalrelan/.nuget/packages/",
+        "outputPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kunalrelan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/kunalrelan/Desktop/Projects/API/Employee.Data.EF/Employee.Data.EF.csproj": {
+                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Data.EF/Employee.Data.EF.csproj"
+              },
+              "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure.Interface/Employee.Infrastructure.Interface.csproj": {
+                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure.Interface/Employee.Infrastructure.Interface.csproj"
+              },
+              "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Client/Employee.Models.Client.csproj": {
+                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Client/Employee.Models.Client.csproj"
+              },
+              "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Data/Employee.Models.Data.csproj": {
+                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Data/Employee.Models.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Client/Employee.Models.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Client/Employee.Models.Client.csproj",
+        "projectName": "Employee.Models.Client",
+        "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Client/Employee.Models.Client.csproj",
+        "packagesPath": "/Users/kunalrelan/.nuget/packages/",
+        "outputPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Client/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kunalrelan/.nuget/NuGet/NuGet.Config"
@@ -130,14 +264,68 @@
         }
       }
     },
-    "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.EF/Employee.Repositories.EF.csproj": {
+    "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Data/Employee.Models.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.EF/Employee.Repositories.EF.csproj",
-        "projectName": "Employee.Repositories.EF",
-        "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.EF/Employee.Repositories.EF.csproj",
+        "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Data/Employee.Models.Data.csproj",
+        "projectName": "Employee.Models.Data",
+        "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Data/Employee.Models.Data.csproj",
         "packagesPath": "/Users/kunalrelan/.nuget/packages/",
-        "outputPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.EF/obj/",
+        "outputPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kunalrelan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kunalrelan/Desktop/Projects/API/Employee.Repositories.EF/Employee.Repositories.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/Employee.Repositories.EF/Employee.Repositories.EF.csproj",
+        "projectName": "Employee.Repositories.EF",
+        "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Repositories.EF/Employee.Repositories.EF.csproj",
+        "packagesPath": "/Users/kunalrelan/.nuget/packages/",
+        "outputPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Repositories.EF/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kunalrelan/.nuget/NuGet/NuGet.Config"
@@ -153,14 +341,20 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Data.EF/Employee.Data.EF.csproj": {
-                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Data.EF/Employee.Data.EF.csproj"
+              "/Users/kunalrelan/Desktop/Projects/API/Employee.Data.EF/Employee.Data.EF.csproj": {
+                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Data.EF/Employee.Data.EF.csproj"
               },
-              "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj": {
-                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj"
+              "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure.Interface/Employee.Infrastructure.Interface.csproj": {
+                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure.Interface/Employee.Infrastructure.Interface.csproj"
               },
-              "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.Interfaces/Employee.Repositories.Interfaces.csproj": {
-                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.Interfaces/Employee.Repositories.Interfaces.csproj"
+              "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure/Employee.Infrastructure.csproj": {
+                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure/Employee.Infrastructure.csproj"
+              },
+              "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Data/Employee.Models.Data.csproj": {
+                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Data/Employee.Models.Data.csproj"
+              },
+              "/Users/kunalrelan/Desktop/Projects/API/Employee.Repositories.Interfaces/Employee.Repositories.Interfaces.csproj": {
+                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Repositories.Interfaces/Employee.Repositories.Interfaces.csproj"
               }
             }
           }
@@ -200,14 +394,14 @@
         }
       }
     },
-    "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.Interfaces/Employee.Repositories.Interfaces.csproj": {
+    "/Users/kunalrelan/Desktop/Projects/API/Employee.Repositories.Interfaces/Employee.Repositories.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.Interfaces/Employee.Repositories.Interfaces.csproj",
+        "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/Employee.Repositories.Interfaces/Employee.Repositories.Interfaces.csproj",
         "projectName": "Employee.Repositories.Interfaces",
-        "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.Interfaces/Employee.Repositories.Interfaces.csproj",
+        "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Repositories.Interfaces/Employee.Repositories.Interfaces.csproj",
         "packagesPath": "/Users/kunalrelan/.nuget/packages/",
-        "outputPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.Interfaces/obj/",
+        "outputPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Repositories.Interfaces/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kunalrelan/.nuget/NuGet/NuGet.Config"
@@ -223,8 +417,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj": {
-                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj"
+              "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure.Interface/Employee.Infrastructure.Interface.csproj": {
+                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Infrastructure.Interface/Employee.Infrastructure.Interface.csproj"
+              },
+              "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Data/Employee.Models.Data.csproj": {
+                "projectPath": "/Users/kunalrelan/Desktop/Projects/API/Employee.Models.Data/Employee.Models.Data.csproj"
               }
             }
           }

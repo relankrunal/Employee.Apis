@@ -1,4 +1,5 @@
-﻿using Employee.Models.Data.Messages.Response;
+﻿using Employee.Models.Client.Enumerations;
+using Employee.Models.Data.Messages.Response;
 using Employee.Repositories.Interfaces;
 
 namespace Employee.Services.Core
@@ -12,32 +13,32 @@ namespace Employee.Services.Core
             _repository = repository;
         }
 
-        protected internal virtual async Task<PagingList<O>?> ExecuteStoreProcedure<I, O>(string procName, I input, string output = "") where O : class
+        protected internal virtual async Task<PagingList<O>?> ExecuteStoreProcedure<I, O>(string procName, DbContextName context, I input, string output = "") where O : class
         {
             var unitOfWork = _repository as IUnitOfwork;
 
-            var repository = unitOfWork?.GetRepository<O>();
+            var repository = unitOfWork?.GetRepository<O>(context);
 
             if (repository != null)
             {
-                var result = await repository.ExecuteStoreProcedure(procName, input, output);
+                var result = await repository.ExecuteStoredProcedure(procName, input, output);
                 return result;
             }
             return default;
         }
 
-        protected internal virtual async Task<int?> ExecuteStoreProcedure<I>(string procName, I input, string output = "", bool forJob = false)
-        {
-            var unitOfWork = _repository as IUnitOfwork;
+        //protected internal virtual async Task<int?> ExecuteStoreProcedure<I>(string procName, I input, string output = "", bool forJob = false)
+        //{
+        //    var unitOfWork = _repository as IUnitOfwork;
 
-            if (unitOfWork != null)
-            {
-                var result = await unitOfWork.ExecuteStoreProcedure(procName, input, output, forJob);
-                return result;
-            }
+        //    if (unitOfWork != null)
+        //    {
+        //        var result = await unitOfWork.ExecuteStoreProcedure(procName, input, output, forJob);
+        //        return result;
+        //    }
 
-            return default;
-        }
+        //    return default;
+        //}
     }
 }
 
