@@ -5,48 +5,38 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Employee.Repositories.EF
 {
-    public class UnitOfWork : IUnitOfwork
+    public class UnitOfWork : IUnitOfWork
+{
+    private readonly IDbContextFactory _dbContextFactory;
+
+    private DbContext _context;
+
+    public UnitOfWork(IDbContextFactory dbContextFactory)
     {
-        private AppDbContext context;
-
-        public UnitOfWork(AppDbContext context)
-        {
-            this.context = context;
-        }
-
-        public async Task<int?> ExecuteStoreProcedure<I>(string procName, I input, string output = "", bool forJob = false)
-        {
-            var sqlParams = Parameters.Transform(input, output);
-            var stringOfParameters = string.Join(separator: ",",
-                values: sqlParams.Where(a => a.Direction != System.Data.ParameterDirection.Output).Select(s => s.ParameterName));
-
-            if (!string.IsNullOrEmpty(output))
-            {
-                stringOfParameters += ", @" + output + " = @" + output + " output";
-            }
-
-            if (forJob)
-                context.Database.SetCommandTimeout(0);
-
-            var response = await context.Database.ExecuteSqlRawAsync(procName + " " + stringOfParameters, sqlParams);
-            var outParameter = sqlParams.Where(a => a.Direction == System.Data.ParameterDirection.Output).FirstOrDefault();
-            if (outParameter != null)
-            {
-                return (int)outParameter.Value;
-            }
-
-            return null;
-        }
-
-        public IGenericRepository<T> GetRepository<T>() where T : class
-        {
-            return new GenericRepository<T>(context);
-        }
-
-        public void SaveChanges()
-        {
-            context.SaveChanges();
-        }
+        _dbContextFactory = dbContextFactory;
     }
+    public IGenericRepository<T> GetRepository<T>(DbContextName contextType) where T : class
+    {
+        _context ??= _dbContextFactory.CreateDbContext(contextType);
+
+        return new GenericRepository<T>(_context);
+    }
+
+    public void SaveChanges()
+    {
+        _context.SaveChanges();
+    }
+
+    public async Task<int?> ExecuteStoredProcedure(string query, SqlParameter[] sqlParams)
+    {
+        var response = await _context.Database.ExecuteSqlRawAsync(query, sqlParams);
+        var outParameter = sqlParams.Where(x => x.Direction == ParameterDirection.Output).FirstOrDefault();
+        if (outParameter != null)
+        {
+            return (int)outParameter.Value;
+        }
+        return null;
+    }
+}
 }
 
