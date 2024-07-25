@@ -1,42 +1,40 @@
 ﻿using System;
-using Employee.Data.EF;
+using Employee.Infrastructure;
+using Employee.Infrastructure.Interface;
+using Employee.Models.Client.Enumerations;
 using Employee.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Employee.Repositories.EF
 {
-    public class UnitOfWork : IUnitOfWork
-{
-    private readonly IDbContextFactory _dbContextFactory;
-
-    private DbContext _context;
-
-    public UnitOfWork(IDbContextFactory dbContextFactory)
+	public class UnitOfWork : IUnitOfwork
     {
-        _dbContextFactory = dbContextFactory;
-    }
-    public IGenericRepository<T> GetRepository<T>(DbContextName contextType) where T : class
-    {
-        _context ??= _dbContextFactory.CreateDbContext(contextType);
+        private readonly IDbContextFactory _dbContextFactory;
 
-        return new GenericRepository<T>(_context);
-    }
+        private DbContext _context;
 
-    public void SaveChanges()
-    {
-        _context.SaveChanges();
-    }
+		public UnitOfWork(IDbContextFactory dbContextFactory)
+		{
+            _dbContextFactory = dbContextFactory;
+		}
 
-    public async Task<int?> ExecuteStoredProcedure(string query, SqlParameter[] sqlParams)
-    {
-        var response = await _context.Database.ExecuteSqlRawAsync(query, sqlParams);
-        var outParameter = sqlParams.Where(x => x.Direction == ParameterDirection.Output).FirstOrDefault();
-        if (outParameter != null)
+        //public async Task<int?> ExecuteStoreProcedure<I>(string query, I input, string outPut = "", bool forJob = false)
+        //{
+        //    var respone = await _context.Database.ExecuteSqlRawAsync(query,SqlParameter) 
+        //}
+
+        public IGenericRepository<T> GetRepository<T>(DbContextName dbContextName) where T : class
         {
-            return (int)outParameter.Value;
+            _context ??= _dbContextFactory.CreateDbContext(dbContextName);
+
+            return new GenericRepository<T>(_context);
         }
-        return null;
+
+        public void SaveChanges()
+        {
+            _context.SaveChanges();
+        }
+              
     }
-}
 }
 

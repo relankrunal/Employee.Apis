@@ -1,5 +1,6 @@
-﻿using System;
-using Microsoft.Data.SqlClient;
+﻿
+using Employee.Infrastructure.Interface;
+using Employee.Models.Client.Enumerations;
 
 namespace Employee.Repositories.Interfaces
 {
@@ -7,9 +8,9 @@ namespace Employee.Repositories.Interfaces
 	{
 		void SaveChanges();
 
-		IGenericRepository<T> GetRepository<T>() where T : class;
+		IGenericRepository<T> GetRepository<T>(DbContextName dbContextName) where T : class;
 
-		Task<int?> ExecuteStoreProcedure<I>(string query, I input, string outPut= "", bool forJob = false);
+		//Task<int?> ExecuteStoreProcedure<I>(string query, I input, string outPut= "", bool forJob = false);
 	}
 }
 

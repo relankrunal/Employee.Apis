@@ -1,4 +1,7 @@
-namespace Employee.Repositories.Ef.Shared
+using System.Linq.Expressions;
+using Microsoft.EntityFrameworkCore;
+
+namespace Employee.Infrastructure
 {
     public static class QueryableExtensions
     {       
