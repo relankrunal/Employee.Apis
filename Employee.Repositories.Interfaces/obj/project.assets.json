@@ -2024,11 +2024,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Repositories.Interfaces/Employee.Repositories.Interfaces.csproj",
+      "projectUniqueName": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.Interfaces/Employee.Repositories.Interfaces.csproj",
       "projectName": "Employee.Repositories.Interfaces",
-      "projectPath": "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Repositories.Interfaces/Employee.Repositories.Interfaces.csproj",
+      "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.Interfaces/Employee.Repositories.Interfaces.csproj",
       "packagesPath": "/Users/kunalrelan/.nuget/packages/",
-      "outputPath": "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Repositories.Interfaces/obj/",
+      "outputPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Repositories.Interfaces/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/kunalrelan/.nuget/NuGet/NuGet.Config"
@@ -2044,8 +2044,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj": {
-              "projectPath": "/Users/kunalrelan/Desktop/Desktop Folders/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj"
+            "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj": {
+              "projectPath": "/Users/kunalrelan/Desktop/Projects/API/src/Employee.Apis/Employee.Models.Data/Employee.Models.Data.csproj"
             }
           }
         }
