@@ -1,6 +1,7 @@
 ﻿
 using Employee.Infrastructure.Interface;
 using Employee.Models.Client.Enumerations;
+using Microsoft.Data.SqlClient;
 
 namespace Employee.Repositories.Interfaces
 {
@@ -10,7 +11,7 @@ namespace Employee.Repositories.Interfaces
 
 		IGenericRepository<T> GetRepository<T>(DbContextName dbContextName) where T : class;
 
-		//Task<int?> ExecuteStoreProcedure<I>(string query, I input, string outPut= "", bool forJob = false);
+		Task<int?> ExecuteStoreProcedure<I>(string query, SqlParameter[] sqlParameters);
 	}
 }
 

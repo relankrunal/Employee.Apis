@@ -3,6 +3,7 @@ using Employee.Infrastructure;
 using Employee.Infrastructure.Interface;
 using Employee.Models.Client.Enumerations;
 using Employee.Repositories.Interfaces;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace Employee.Repositories.EF
@@ -18,10 +19,11 @@ namespace Employee.Repositories.EF
             _dbContextFactory = dbContextFactory;
 		}
 
-        //public async Task<int?> ExecuteStoreProcedure<I>(string query, I input, string outPut = "", bool forJob = false)
-        //{
-        //    var respone = await _context.Database.ExecuteSqlRawAsync(query,SqlParameter) 
-        //}
+        public async Task<int?> ExecuteStoreProcedure<I>(string query, SqlParameter[] sqlParameter)
+        {
+            var respone = await _context.Database.ExecuteSqlRawAsync(query, sqlParameter);
+            return respone;
+        }
 
         public IGenericRepository<T> GetRepository<T>(DbContextName dbContextName) where T : class
         {

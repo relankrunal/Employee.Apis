@@ -1,5 +1,7 @@
 ﻿
 using Employee.Data.EF;
+using Employee.Infrastructure;
+using Employee.Infrastructure.Interface;
 using Employee.Repositories.EF;
 using Employee.Repositories.Interfaces;
 using Employee.Services.Core;
@@ -29,6 +31,7 @@ internal class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
+        builder.Services.AddTransient<IDbContextFactory, DbContextFactory>();
         builder.Services.AddTransient<IUnitOfwork, UnitOfWork>();
 
         builder.Services.AddTransient<IEmployeeService, EmployeeService>();
